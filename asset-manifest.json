@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e85c5f22.css",
-    "main.js": "/static/js/main.f2951bcd.js",
-    "index.html": "/index.html",
-    "main.e85c5f22.css.map": "/static/css/main.e85c5f22.css.map",
-    "main.f2951bcd.js.map": "/static/js/main.f2951bcd.js.map"
+    "main.css": "/HivexTest/static/css/main.e85c5f22.css",
+    "main.js": "/HivexTest/static/js/main.f2951bcd.js",
+    "index.html": "/HivexTest/index.html",
+    "main.e85c5f22.css.map": "/HivexTest/static/css/main.e85c5f22.css.map",
+    "main.f2951bcd.js.map": "/HivexTest/static/js/main.f2951bcd.js.map"
   },
   "entrypoints": [
     "static/css/main.e85c5f22.css",
