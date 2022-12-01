@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/HivexTest/static/css/main.e85c5f22.css",
-    "main.js": "/HivexTest/static/js/main.f2951bcd.js",
+    "main.css": "/HivexTest/static/css/main.99ff726f.css",
+    "main.js": "/HivexTest/static/js/main.521285a6.js",
     "index.html": "/HivexTest/index.html",
-    "main.e85c5f22.css.map": "/HivexTest/static/css/main.e85c5f22.css.map",
-    "main.f2951bcd.js.map": "/HivexTest/static/js/main.f2951bcd.js.map"
+    "main.99ff726f.css.map": "/HivexTest/static/css/main.99ff726f.css.map",
+    "main.521285a6.js.map": "/HivexTest/static/js/main.521285a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e85c5f22.css",
-    "static/js/main.f2951bcd.js"
+    "static/css/main.99ff726f.css",
+    "static/js/main.521285a6.js"
   ]
 }
