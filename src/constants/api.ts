@@ -10,3 +10,4 @@ export const LOCATION = 'location';
 export const EPISODE = 'episode';
 export const BOOKMARKS = 'bookmarks'
 export const PAGE = '?page=';
+export const HIVECSTEST = '/HivexTest/'

@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Result, RootObject } from "../../../apiinterface/data";
-import { RICK_AND_MORTY_API_ROOT, CHARACTER, PAGE } from "../../../constants/api";
+import { RICK_AND_MORTY_API_ROOT, CHARACTER, PAGE, HIVECSTEST } from "../../../constants/api";
 import axios from "axios"
 import styles from "./Characters.module.css"
 import {AiOutlineSearch, AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai"
 import { Link, useNavigate } from "react-router-dom";
 
-// export let rout = ''
-// export let characterrout = ''
 const Characters = ()=>{
 
     const [characters, setCharacters] = useState<RootObject>()
@@ -18,9 +16,7 @@ const Characters = ()=>{
     useEffect(  ()=>{
         const res = async()=>{
             const res = await axios(RICK_AND_MORTY_API_ROOT+CHARACTER+PAGE+page)
-            setCharacters(res.data)
-            // console.log(res.data.results);
-            
+            setCharacters(res.data)            
         }
         res()
     },[page])
@@ -35,9 +31,9 @@ const Characters = ()=>{
         const res = await axios(RICK_AND_MORTY_API_ROOT+CHARACTER+PAGE+page)
         setCharacters(res.data)
     }
-    const checkPerson = (el: Result)=>{     
-        navigate('/'+CHARACTER+'/'+el.id  )
-    }
+    // const checkPerson = (el: Result)=>{     
+    //     navigate('/'+CHARACTER+'/'+el.id  )
+    // }
     return <div className={styles.wrapper}>
 
         <div className={styles.search}>
@@ -48,24 +44,27 @@ const Characters = ()=>{
         <ul className={styles.charList}>
         {
             characters && charfilter==='' && characters.results.map((el: any, ind: any)=>{
-                return <li key={ind} className={styles.listItem}
-                onClick={()=>{checkPerson(el)}}>
+                return <Link to={'/HivexTest/character/'+el.id}>
+                <li key={ind} className={styles.listItem}
+                >
                     <img src={el.image}/>
                     <p>{el.name}</p>                                          
                 </li>
+                </Link>
             })
         }
         {
             characters && charfilter!=='' && characters.results.filter((el)=>{
                 return el.name.toLowerCase().includes(charfilter.toLowerCase())
             }).map((el: any, ind: any)=>{            
-                return <li key={ind} 
+                return <Link to={'/HivexTest/character/'+el.id}>
+                    <li key={ind} 
                         className={styles.listItem}
-                        onClick={()=>{checkPerson(el)}}
-                >
-                    <img src={el.image}/>
-                    <p>{el.name}</p>
-                </li>
+                    >
+                        <img src={el.image}/>
+                        <p>{el.name}</p>
+                    </li>
+                </Link>
             })
         } 
     </ul>

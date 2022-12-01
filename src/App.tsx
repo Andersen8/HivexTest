@@ -13,12 +13,12 @@ function App() {
   return (    <>
     <Header/>
     <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path={'/'+CHARACTER} element={<Characters/>}/>
-        <Route path={'/'+LOCATION} element={<Locations/>}/>
-        <Route path={'/'+EPISODE} element={<Episodes/>}/>
-        <Route path={CHARACTER+"/:id"} element={<Person/>} />
-        <Route path={'/'+BOOKMARKS} element={<Bookmarks/>} />
+        <Route path='/HivexTest/' element={<Home/>}/>
+        <Route path={'/HivexTest/'+CHARACTER} element={<Characters/>}/>
+        <Route path={'/HivexTest/'+LOCATION} element={<Locations/>}/>
+        <Route path={'/HivexTest/'+EPISODE} element={<Episodes/>}/>
+        <Route path={'/HivexTest/'+CHARACTER+"/:id"} element={<Person/>} />
+        <Route path={'/HivexTest/'+BOOKMARKS} element={<Bookmarks/>} />
         <Route path="*" element={<h2 style={{margin: "300px 300px"}}>Resource is not found</h2>} />
     </Routes>   
   </>
