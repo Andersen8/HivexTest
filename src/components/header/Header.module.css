@@ -1,0 +1,47 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: darkgreen;
+}
+.headerContainer{
+    max-width: 940px;
+    margin: 0 auto;
+    height: 80px;
+}
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 15px;
+    color: white;
+}
+.iconWrapper{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.icon:hover{
+    color: yellow
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 28px;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: yellow
+}
