@@ -14,7 +14,7 @@ const Header = ()=>{
             </div>
             <div className={styles.contacts}>
                 <a href="/bookmarks">Bookmarks <MdFavoriteBorder/></a>
-                <a href="/">Andrew Stetsiura <AiOutlineGithub/></a>                
+                <a href="https://github.com/Andersen8/HivexTest">Andrew Stetsiura <AiOutlineGithub/></a>                
             </div>
         </div>
         </div>
