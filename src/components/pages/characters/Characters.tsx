@@ -31,10 +31,7 @@ const Characters = ()=>{
         const res = await axios(RICK_AND_MORTY_API_ROOT+CHARACTER+PAGE+page)
         setCharacters(res.data)
     }
-    // const checkPerson = (el: Result)=>{     
-    //     navigate('/'+CHARACTER+'/'+el.id  )
-    // }
-    return <div className={styles.wrapper}>
+    return <>
 
         <div className={styles.search}>
             <AiOutlineSearch className={styles.icon}/>
@@ -47,8 +44,8 @@ const Characters = ()=>{
                 return <Link to={'/HivexTest/character/'+el.id}>
                 <li key={ind} className={styles.listItem}
                 >
-                    <img src={el.image}/>
-                    <p>{el.name}</p>                                          
+                    <img src={el.image} className={styles.image}/>
+                    <div className={styles.itemtext}>{el.name}</div>                                          
                 </li>
                 </Link>
             })
@@ -73,7 +70,7 @@ const Characters = ()=>{
         {page}
         <button onClick={()=>{nextPage()}}><AiFillCaretRight className={styles.icon}/></button>
     </div>
-    </div>
+    </>
     
     
 }

@@ -11,7 +11,18 @@
     text-align: center;
     text-decoration: none;
     color: green;
-    font-size: 5vw;
+    font-size: 44px;
+}
+@media (max-width: 410px){
+    .item{
+        display: block;  
+        margin: 12px 15%;  
+        padding: 0 10px;
+        text-align: center;
+        text-decoration: none;
+        color: green;
+        font-size: 28px;
+    }
 }
 .item:hover{
     background-color: green;

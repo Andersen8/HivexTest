@@ -7,17 +7,17 @@ import { BOOKMARKS } from "../../constants/api";
 const Header = ()=>{
     return <div className={styles.header}>
         <div className={styles.headerContainer}>
-        <div className={styles.headerWrapper}>
-            <div className={styles.iconWrapper}>
-                <a href="/HivexTest/">
-                    <AiOutlineHome className={styles.icon}/>
-                </a>
+            <div className={styles.headerWrapper}>
+                <div className={styles.center}>
+                    <a href="/HivexTest/">
+                        <AiOutlineHome className={styles.icon}/>
+                    </a>
+                </div>
+                <div className={styles.center}>
+                    <Link to={'/HivexTest/'+BOOKMARKS} ><MdFavoriteBorder className={styles.icon}/></Link>
+                    <a href="https://github.com/Andersen8/HivexTest"><AiOutlineGithub className={styles.icon}/></a>                
+                </div>
             </div>
-            <div className={styles.contacts}>
-                <Link to={'/HivexTest/'+BOOKMARKS}>Bookmarks <MdFavoriteBorder/></Link>
-                <a href="https://github.com/Andersen8/HivexTest">Andrew Stetsiura <AiOutlineGithub/></a>                
-            </div>
-        </div>
         </div>
     </div>
     

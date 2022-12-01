@@ -12,8 +12,21 @@
   .listItem{
       display: block;
       padding: 10px 20px;
-      background-color: aquamarine;
+      background-color: lightgray;
       border: 1px solid black;
       text-align: center;
       font-size: 22px;
   }
+.image{
+    width: 320px;
+    height: 320px;
+}
+  @media (max-width: 420px){
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+    .itemtext{
+        max-width: 150px;
+    }
+}

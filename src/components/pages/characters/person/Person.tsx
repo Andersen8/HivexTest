@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch} from "react-redux";
 import { Result } from "../../../../apiinterface/data";
-import store from "../../../../store/store";
 import styles from "./Person.module.css"
 import ReactRouterDOM, { Link, useParams } from "react-router-dom"
 import axios from "axios"
 import {RICK_AND_MORTY_API_ROOT, CHARACTER} from "../../../../constants/api"
 import { AppDispatch, RootState } from "../../../../store/store";
 import {setPersonToFavorite, removePersonFromFavorites} from "../../../../store/actions/actions"
+
 const Person = ()=>{
+
     const [person, setPerson] = useState<any>()
     const dispatch: AppDispatch = useDispatch()
     const {id} = useParams()
-
     const favoritePersons = useSelector((state: RootState)=>state.rootReducer)
-
    
     useEffect(
          ()=>{ 
@@ -36,7 +35,7 @@ const Person = ()=>{
 
     return <div className={styles.person}>
         {
-            person && <img src={person.image}/>
+            person && <img src={person.image} className={styles.image}/>
         }
         {
            person && <div className={styles.personInfo}>                

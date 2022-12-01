@@ -5,8 +5,9 @@
     right: 0;
     background-color: darkgreen;
 }
+
 .headerContainer{
-    max-width: 940px;
+    max-width: 1000px;
     margin: 0 auto;
     height: 80px;
 }
@@ -17,8 +18,9 @@
     margin: 0 15px;
     color: white;
 }
-.iconWrapper{
+.center{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .icon{
@@ -26,17 +28,10 @@
     width: 30px;
     height: 30px;
     color: white;
+    padding-right: 10px;
 }
 .icon:hover{
     color: yellow
-}
-.contacts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    font-size: 28px;
-    color: inherit;
 }
 a{
     text-decoration: none;

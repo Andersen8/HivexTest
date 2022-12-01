@@ -1,7 +1,6 @@
 .person{
     margin-top: 140px;
-    padding: 20px 10px;
-    
+    padding: 20px 10px;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,4 +20,46 @@
     background-color: darkred;
     color: white;
     padding: 0 10px;
+}
+@media (max-width: 690px){
+    .person{
+        margin-top: 90px;
+        padding: 10px 10px;    
+        display: block;
+        border: 1px solid darkgreen
+    }
+    .image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+        height: 320px;
+    }
+    .personInfo{
+        text-align: center;
+        font-size: 28px;
+        margin: 10px 20px;
+        color: darkslategrey;
+    }
+}
+@media (max-width: 380px){
+    .person{
+        margin-top: 90px;
+        padding: 10px 10px;    
+        display: block;
+        border: 1px solid darkgreen
+    }
+    .image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+    }
+    .personInfo{
+        text-align: center;
+        font-size: 22px;
+        margin: 10px 20px;
+        color: darkslategrey;
+    }
 }

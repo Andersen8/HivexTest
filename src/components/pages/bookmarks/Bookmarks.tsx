@@ -20,7 +20,7 @@ const Bookmarks = ()=>{
     }
    },[])
     const checkPerson = (el: Result)=>{     
-        navigate('/'+CHARACTER+'/'+el.id  )
+        navigate('/HivexTest/'+CHARACTER+'/'+el.id  )
     }
     return <div className={styles.wrapper}>
         <ul className={styles.charList}>
@@ -28,8 +28,8 @@ const Bookmarks = ()=>{
                 favorites  && favorites.map((el: any, ind: any)=>{
                     return <li key={ind} className={styles.listItem}
                     onClick={()=>{checkPerson(el[1])}}>
-                        <img src={el[1].image}/>
-                        <p>{el[1].name}</p>                                          
+                        <img src={el[1].image} className={styles.image}/>
+                        <p className={styles.itemtext}>{el[1].name}</p>                                          
                     </li>
                 })
             }
